@@ -21,7 +21,7 @@ services:
     image: mariadb
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: db_root_password
+      MYSQL_ROOT_PASSWORD: "30718030"
       MYSQL_DATABASE: wp_database
       MYSQL_USER: wp_user
       MYSQL_PASSWORD: wp_password
