@@ -53,8 +53,12 @@ services:
     volumes:
       - ./certbot/conf:/etc/letsencrypt
       - ./certbot/www:/var/www/certbot
+    command: certonly --webroot --webroot-path=/var/www/certbot --email youremail@example.com --agree-tos --no-eff-email --staging -d umaybatuhan
+    depends_on:
+      - nginx
     networks:
       - frontend
+
 
 networks:
   frontend:
